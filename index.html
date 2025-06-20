@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="https://kit.fontawesome.com/325d73e371.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="personal-portfolio-img/images/S.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Swayam Gadhvana</span><br> From Gujarat</h1>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ----------------about---------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="personal-portfolio-img/images/Swayam.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm Swayam Gadhvana, A passionate and curious Computer Science student with hands-on experience in web development through an internship. I love building real-world solutions and continuously learning new technologies to grow as a future professional. <br>
+                        During my internship at OASIS INFOBYTE, I worked on frond-end interfaces using HTML, CSS, JAVASCRIPT. My goal is to continue improving my skills and contribute to imapctful projects. I'm particularly interested in FULL-STACK DEVELOPMENT.
+                        When I'm not Coding, I enjoy Gaming which helps me stay focused and creative. 
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JAVASCRIPT</span></li>
+                            <li><span>BOOTSTRAP</span></li>
+                            <li><span>LANGUAGES => </span>JAVA/C</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Current</span><br>DIPLOMA at DRVRGCET</li>
+                            <li><span>2011 - 2021</span><br>SSC at SSES</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- -------------projects-------------- -->
+     <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="projects-list">
+
+            <div>
+                <i class="fa-solid fa-temperature-high"></i>
+                <h2>Temperature Converter</h2>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-file-lines"></i>
+                <h2>Landing <br> Page</h2>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-list-check"></i>
+                <h2>Task Application</h2>
+                <a href="#">Learn More</a>
+            </div>
+
+            <div>
+                <i class="fa-solid fa-music"></i>
+                <h2>Music <br> Player</h2>
+                <a href="#">Learn More</a>
+            </div>
+            </div>
+        </div>
+     </div>
+
+
+    <!-- -------------contact-------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fas fa-paper-plane"></i>gadhvanaraj@gmail.com</p>
+                    <p> <i class="fas fa-phone-square-alt"></i>8980465312</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/"><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/swayam-gadhvana-b39246368/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="personal-portfolio-img/images/Mycv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ SG. Made with ❤️ by SG</p>
+        </div>
+    </div>
+
+
+    <script src="portfolio.js"></script>
+</body>
+</html>
